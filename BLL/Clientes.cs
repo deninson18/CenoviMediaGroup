@@ -9,6 +9,10 @@ namespace BLL
 {
     public class Clientes : ClaseMaestra
     {
+        public override bool Insertar()
+        {
+            throw new NotImplementedException();
+        }
         public override bool Buscar(int IdBuscar)
         {
             throw new NotImplementedException();
@@ -19,10 +23,7 @@ namespace BLL
             throw new NotImplementedException();
         }
 
-        public override bool Insertar()
-        {
-            throw new NotImplementedException();
-        }
+       
 
         public override DataTable Listado(string Campos, string Condicion, string Orden)
         {

@@ -1,21 +1,49 @@
-create table Usuarios(
-UsuarioId int NOT NULL IDENTITY(1,1) PRIMARY KEY,
-Nombres varchar(50),
-Apellidos varchar(50),
-NombreUsuario varchar(50),
-Contrasena Varchar(200),
-TipoUsuario varchar(20));
+CREATE TABLE Usuarios(
+UsuarioId INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+Nombres VARCHAR(50),
+Apellidos VARCHAR(50),
+NombreUsuario VARCHAR(50),
+Contrasena VARCHAR(200),
+TipoUsuario VARCHAR(20));
 
-go
+GO
 
 create table Rutas(
 RutaId int NOT NULL IDENTITY(1,1)PRIMARY KEY,
 Descripcion varchar(200));
 
-select * from Usuarios; 
-select * from Rutas;
+GO
 
-DROP TABLE Usuarios;DROP TABLE Rutas;
+CREATE TABLE Cobradores(
+CobradorId INT IDENTITY(1,1) PRIMARY KEY,
+Nombres VARCHAR(50),
+Apellidos VARCHAR(50),
+Direccion VARCHAR(100),
+Telefono VARCHAR(14),
+Celular VARCHAR(14),
+Cedula varchar(13) UNIQUE CHECK (LEN(Cedula) = 13));
+
+GO
+
+CREATE TABLE Clientes(
+ClienteId INT IDENTITY(1,1) PRIMARY KEY,
+RutaId INT FOREIGN KEY REFERENCES Rutas(RutaId),
+Nombres VARCHAR(50),
+Apellidos VARCHAR(50),
+Apodos VARCHAR(30),
+Sexo BIT,
+Direccion VARCHAR(150),
+Referencia VARCHAR(50),
+Cedula VARCHAR(13) UNIQUE CHECK (LEN(Cedula) = 13),
+Telefono VARCHAR(14),
+Celular VARCHAR(14)
+);
+SELECT * FROM Usuarios; 
+SELECT * FROM Rutas;
+SELECT * FROM Cobradores;
+SELECT * FROM CLIENTES;
+
+DROP TABLE Usuarios;DROP TABLE Rutas;DROP TABLE Cobradores;DROP TABLE Clientes;
 
 
 
