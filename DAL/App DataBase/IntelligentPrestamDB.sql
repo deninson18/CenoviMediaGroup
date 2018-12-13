@@ -41,7 +41,7 @@ Celular VARCHAR(14)
 SELECT * FROM Usuarios; 
 SELECT * FROM Rutas;
 SELECT * FROM Cobradores;
-SELECT * FROM CLIENTES;
+SELECT * FROM Clientes;
 
 DROP TABLE Usuarios;DROP TABLE Rutas;DROP TABLE Cobradores;DROP TABLE Clientes;
 

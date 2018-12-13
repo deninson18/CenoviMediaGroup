@@ -96,9 +96,6 @@ namespace BLL
 
         }
 
-       
-
-
         public override DataTable Listado(string Campos, string Condicion, string Orden)
         {
             throw new NotImplementedException();
