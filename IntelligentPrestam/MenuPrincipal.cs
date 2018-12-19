@@ -26,5 +26,19 @@ namespace IntelligentPrestam
 
             }
         }
+
+        private void uSUARIOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registros.RegistroUsuario registro = new Registros.RegistroUsuario();
+            registro.Show();
+               
+
+        }
+
+        private void rUTASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registros.RegistroRutas registro = new Registros.RegistroRutas();
+            registro.Show();
+        }
     }
 }

@@ -30,6 +30,12 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.rEGISTROSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uSUARIOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rUTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cOBRADORESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cLIENTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pRESTAMOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cOBROSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cONSULTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rEPORTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hERRAMIENTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,9 +61,54 @@
             // 
             // rEGISTROSToolStripMenuItem
             // 
+            this.rEGISTROSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.uSUARIOSToolStripMenuItem,
+            this.rUTASToolStripMenuItem,
+            this.cOBRADORESToolStripMenuItem,
+            this.cLIENTESToolStripMenuItem,
+            this.pRESTAMOSToolStripMenuItem,
+            this.cOBROSToolStripMenuItem});
             this.rEGISTROSToolStripMenuItem.Name = "rEGISTROSToolStripMenuItem";
             this.rEGISTROSToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.rEGISTROSToolStripMenuItem.Text = "REGISTROS";
+            // 
+            // uSUARIOSToolStripMenuItem
+            // 
+            this.uSUARIOSToolStripMenuItem.Name = "uSUARIOSToolStripMenuItem";
+            this.uSUARIOSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.uSUARIOSToolStripMenuItem.Text = "USUARIOS";
+            this.uSUARIOSToolStripMenuItem.Click += new System.EventHandler(this.uSUARIOSToolStripMenuItem_Click);
+            // 
+            // rUTASToolStripMenuItem
+            // 
+            this.rUTASToolStripMenuItem.Name = "rUTASToolStripMenuItem";
+            this.rUTASToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rUTASToolStripMenuItem.Text = "RUTAS";
+            this.rUTASToolStripMenuItem.Click += new System.EventHandler(this.rUTASToolStripMenuItem_Click);
+            // 
+            // cOBRADORESToolStripMenuItem
+            // 
+            this.cOBRADORESToolStripMenuItem.Name = "cOBRADORESToolStripMenuItem";
+            this.cOBRADORESToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cOBRADORESToolStripMenuItem.Text = "COBRADORES";
+            // 
+            // cLIENTESToolStripMenuItem
+            // 
+            this.cLIENTESToolStripMenuItem.Name = "cLIENTESToolStripMenuItem";
+            this.cLIENTESToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cLIENTESToolStripMenuItem.Text = "CLIENTES";
+            // 
+            // pRESTAMOSToolStripMenuItem
+            // 
+            this.pRESTAMOSToolStripMenuItem.Name = "pRESTAMOSToolStripMenuItem";
+            this.pRESTAMOSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pRESTAMOSToolStripMenuItem.Text = "PRESTAMOS";
+            // 
+            // cOBROSToolStripMenuItem
+            // 
+            this.cOBROSToolStripMenuItem.Name = "cOBROSToolStripMenuItem";
+            this.cOBROSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cOBROSToolStripMenuItem.Text = "COBROS";
             // 
             // cONSULTASToolStripMenuItem
             // 
@@ -118,5 +169,11 @@
         private System.Windows.Forms.ToolStripMenuItem hERRAMIENTASToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aYUDAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aCERCADEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem uSUARIOSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rUTASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cOBRADORESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cLIENTESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pRESTAMOSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cOBROSToolStripMenuItem;
     }
 }
